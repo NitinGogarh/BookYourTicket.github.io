@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+      body{
+          background-color:lightsalmon;
+      }
+      .a,.a1,.a2,.a3,.a4,.n,.s,.r,.m{margin: 4px;
+    cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div style="display: flex;  flex-direction: column;">
+        <div style="display: flex;  flex-direction: column; align-items: center;">
+    <div style="margin-bottom: 80px;">
+        Choose Movie :
+            <select name="movies" id="movies" >
+                <option value="m" > Latest Movies </option> 
+                <option value="Spider man" class="first">Spider man $12 </option>
+                <option value="Pushpa"  class="option1">Pushpa $10</option>
+                <option value="RRR" >RRR  $11</option>
+                <option value="Shang Chi" >Shang Chi $9</option>
+              </select>
+             
+    </div>
+    <div style="display: flex;  justify-content : space-around;">
+    <div style="margin-right: 28px;">selected : <button style="height: 16px; width: 16px;background-color:  aqua;"></button></div>
+    <div style="margin-right: 28px;">empty : <button style="height: 16px; width: 16px; background-color:  white;"></button></div>
+    <div style="margin-right: 28px;">You Booked : <button style="height: 16px; width: 16px; background-color: skyblue;"></button></div>
+    <div>occupied : <button style="height: 16px; width: 16px; background-color:  palevioletred;"></button></div>
+    </div>
+</div>
+    <div class = "main" style="display: flex; flex-direction: row;justify-content: center;height: 50vh; align-items: end; margin: 0px;">
+        <div style="display: flex; flex-direction: column; margin: 2px;">
+<div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; " onclick="firstchild(this)">1</div>
+<div class="a4" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "  onclick="firstchild(this)">2</div>
+<div class="a3" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "  onclick="firstchild(this)">3</div>
+<div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "  onclick="firstchild(this)">4</div>
+<div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "  onclick="firstchild(this)">5</div>
+<div class="a2" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"  onclick="firstchild(this)">6</div>
+<div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"  onclick="firstchild(this)">7</div>
+<div class="a3" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"  onclick="firstchild(this)">8</div>
+<div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"  onclick="firstchild(this)">9</div>
+<div class="a1" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"  onclick="firstchild(this)">10</div>
+</div>
+<div style="display: flex;flex-direction: column;">
+<div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;" onclick="firstchild(this)">11</div>
+<div class="a2" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">12</div>
+<div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">13</div>
+<div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">14</div>
+<div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">15</div>
+<div class="a4" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">16</div>
+<div class="a2" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">17</div>
+<div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">18</div>
+<div class="a3" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">19</div>
+<div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">20</div>
+    </div>
+    <div style=" display: flex; margin: 8px;">
+    <div style="display: flex;flex-direction: column;">
+        <div class="a2" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">21</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">22</div>
+        <div class="a3" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">23</div>
+        <div class="a3" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">24</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">25</div>
+        <div class="a4" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">26</div>
+        
+    </div>
+    <div style="display: flex;flex-direction: column;">
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">27</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">28</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">29</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">30</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">31</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">32</div>
+        
+    </div>
+    <div style="display: flex;flex-direction: column; ">
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">33</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">34</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">35</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">36</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">37</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">38</div>
+        
+    </div>
+    <div style="display: flex;flex-direction: column;">
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">39</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">40</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">41</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">42</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">43</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">44</div>
+        
+    </div><div style="display: flex;flex-direction: column;">
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">45</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">46</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">47</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">48</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">49</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">50</div>
+        
+    </div>
+    <div style="display: flex;flex-direction: column;">
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">51</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">52</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">53</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">54</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">55</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">56</div>
+        
+    </div>
+    <div style="display: flex;flex-direction: column;">
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">56</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">57</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">58</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">59</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">60</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">61</div>
+        
+    </div>
+</div>
+    <div style="display: flex; flex-direction: column;">
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px;"onclick="firstchild(this)">62</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">63</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">64</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">65</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">66</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">67</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">68</div>
+        <div class="a1" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">69</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">70</div>
+        <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">71</div>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px;"onclick="firstchild(this)">72</div>
+            <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">73</div>
+            <div class="a1" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">74</div>
+            <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">75</div>
+            <div class="a" style="background-color: white;border: 1px solid black; width: 16px; height: 16px; "onclick="firstchild(this)">76</div>
+            <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">77</div>
+            <div class="a1" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">78</div>
+            <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">79</div>
+            <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">80</div>
+            <div class="a" style="background-color: white;border: 1px solid black; width: 16px;  height: 16px;"onclick="firstchild(this)">81</div>
+            </div>
+</div>
+<div style="display: flex; justify-content: center;">
+    <button style="margin-top: 8px; height: 60px; width: 105px;" onclick="book(this)"> Book</button>
+</div>
+<div style="display: flex; justify-content: center; align-items:center; flex-direction: column; font-weight: 800;">
+   <div style="display: flex; flex-direction: row;"> Total seat Booked : <div class = "seat"> </div></div>
+  <div style="display: flex; flex-direction: row;"> price :  <div class="price" style="font-weight: 400;"></div></div>
+</div>
+</div>
+<script>
+   
+    const main = document.querySelector(".main")
+    const selector = document.querySelector("#movies")
+    const firstchild1 = main.children[0]
+
+  const first1 = document.querySelectorAll(".a1")
+  const first = document.querySelectorAll(".a")
+   const first2 = document.querySelectorAll(".a2")
+   const first3 = document.querySelectorAll(".a3")
+   const first4 = document.querySelectorAll(".a4")
+    const changeoption = document.querySelector(".changeoption")
+    const seat = document.querySelector('.seat')
+    const price = document.querySelector('.price')
+  
+
+    selector.addEventListener('click', function nitin(e) {
+        const var1 = selector.options[selector.selectedIndex].text
+       
+        if (var1 == "Pushpa $10") {
+            selector.value == "Pushpa"
+        }
+        if (var1 == "RRR  $11") {
+            selector.value == "RRR"
+        }
+        if (var1 == "Spider man $12") {
+            selector.value == "Spider man"
+        }
+        if (var1 == "Shang Chi $9") {
+            selector.value == "Shang Chi"
+        }
+        
+        
+       
+       
+       
+       if(selector.value == "Spider man"){
+        seat.innerHTML ='0'
+        
+      for (let i = 0; i < first1.length ; i++) {
+        
+        first1[i].style.backgroundColor = "palevioletred"
+      }
+     }
+          
+      
+
+      if(selector.value == "Pushpa"){
+        seat.innerHTML ='0'
+       for (let i = 0; i<81 ; i++) {
+           
+       if(i<first2.length){
+       first2[i].style.backgroundColor = "palevioletred"}
+         if(i<first.length){
+       first[i].style.backgroundColor = "white"}
+        if(i<first3.length){
+       first3[i].style.backgroundColor = "white"}
+         if(i<first4.length){
+       first4[i].style.backgroundColor = "white"}
+         if(i<first1.length){
+       first1[i].style.backgroundColor = "white"}
+
+     }
+          
+      }
+      if(selector.value == "RRR"){
+        seat.innerHTML ='0'
+       for (let i = 0; i<81 ; i++) {
+       if(i<first3.length){
+       first3[i].style.backgroundColor = "palevioletred"}
+         if(i<first.length){
+       first[i].style.backgroundColor = "white"}
+        if(i<first2.length){
+       first2[i].style.backgroundColor = "white"}
+         if(i<first4.length){
+       first4[i].style.backgroundColor = "white"}
+         if(i<first1.length){
+       first1[i].style.backgroundColor = "white"}
+   
+     }
+          
+      }
+
+
+      if(selector.value == "Shang Chi"){
+        seat.innerHTML ='0'
+       for (let i = 0; i<81 ; i++) {
+       if(i<first4.length){
+       first4[i].style.backgroundColor = "palevioletred"}
+         if(i<first.length){
+       first[i].style.backgroundColor = "white"}
+        if(i<first2.length){
+       first2[i].style.backgroundColor = "white"}
+         if(i<first3.length){
+       first3[i].style.backgroundColor = "white"}
+         if(i<first1.length){
+       first1[i].style.backgroundColor = "white"}
+   
+     }
+          
+      }
+    })
+   
+        
+    
+        function firstchild(element) { 
+            if(selector.value =="Shang Chi" || selector.value == "RRR"|| selector.value == "Pushpa"||selector.value == "Spider man"){
+        if(element.style.backgroundColor == "white")
+        {element.style.backgroundColor = "aqua"}
+        
+    else if( element.style.backgroundColor == "aqua")
+        {
+            element.style.backgroundColor = "white"
+        }
+        
+    }}
+
+    
+    const divn = document.getElementsByTagName('div')
+     
+  function book(element) {
+    if(selector.value == 'Spider man'){
+
+      for(let i = 0;i<divn.length;i++ ){
+         
+      if ( divn[i].style.backgroundColor == "aqua") {
+
+          divn[i].style.backgroundColor = "skyblue"
+          divn[i].className = 'n'
+          const newdivn = document.querySelectorAll('.n')
+          seat.innerHTML = newdivn.length
+          price.innerHTML = 12*newdivn.length +'$'
+      }
+      }
+      }
+      if(selector.value == 'Shang Chi'){
+
+      for(let i = 0;i<divn.length;i++ ){
+      if ( divn[i].style.backgroundColor == "aqua") {
+
+          divn[i].style.backgroundColor = "skyblue"
+          divn[i].className = 's'
+          const new2divn = document.querySelectorAll('.s')
+          
+          seat.innerHTML = new2divn.length
+          price.innerHTML = 9*new2divn.length +'$'
+      }
+      }
+      }
+      if(selector.value == 'RRR'){
+
+      for(let i = 0;i<divn.length;i++ ){
+      if ( divn[i].style.backgroundColor == "aqua") {
+
+          divn[i].style.backgroundColor = "skyblue"
+          divn[i].className = 'r'
+          const new3divn = document.querySelectorAll('.r')
+          seat.innerHTML = new3divn.length
+          price.innerHTML = 11*new3divn.length +'$'
+      }
+      }
+      }
+      if(selector.value == 'Pushpa'){
+
+      for(let i = 0;i<divn.length;i++ ){
+      if ( divn[i].style.backgroundColor == "aqua") {
+
+          divn[i].style.backgroundColor = "skyblue"
+          divn[i].className = 'm'
+          const new4divn = document.querySelectorAll('.m')
+          seat.innerHTML = new4divn.length
+          price.innerHTML = 10*new4divn.length +'$'
+      }
+      }
+      }
+  }
+  
+       
+   
+        
+    
+</script>
+</body>
+</html>
